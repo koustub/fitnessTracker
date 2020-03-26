@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Fitness Tracker</title>
+</head>
+
+<body>
+  <nav>
+    <a href="/">Fitness Tracker</a>
+    <a href="/stats.html">Dashboard</a>
+  </nav>
+  <div class="wrapper">
+    <header>
+      <h1>Fitness Tracker</h1>
+    </header>
+    <div class="ui container exercise">
+      <div class="ui raised card m-auto">
+        <h2>Add Your Exercise</h2>
+
+        <div class="workout-type">
+          <label for="type">Exercise Type:</label>
+          <select name="type" id="type">
+            <option selected>Select Exercise Type</option>
+            <option value="resistance">Resistance</option>
+            <option value="cardio">Cardio</option>
+          </select>
+        </div>
+        <button class='ui button' type="button" id='moreDetails'> <i class="fas fa-plus"></i>Add more details</button>
+        <div id='details'>
+        </div>
+        <div class="buttons">
+          <button class="huge ui blue button complete" id='Complete'>
+            Complete
+          </button>
+          <button class="huge ui positive button" id="add">
+            Add Exercise
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/excercise.js"></script>
+
+
+</body>
+
+</html>
